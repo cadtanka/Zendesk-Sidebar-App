@@ -55,24 +55,31 @@ We assume:
 1. Clone the repo
 
 2. Install Dependencies:
--npm install
+```   
+npm install
+```   
 
-3. Install Zendesk CLI
+4. Install Zendesk CLI
 
-4. Start the local server:
--zcli apps:server
+5. Start the local server:
+```
+zcli apps:server
+```
+9. Open Zendesk agent view
+```
+https://<your-subdomain>.zendesk.com/agent/tickets/<ticket-id>?zcli_apps=true
+```
+11. Build the app: npm run build
 
-5. Open Zendesk agent view
--https://<your-subdomain>.zendesk.com/agent/tickets/<ticket-id>?zcli_apps=true
+12. Copy these files into the Assets Folder:
+```
+cp dist/index.html assets/index.html
+cp -r dist/assets assets/assets
+```
 
-7. Build the app: npm run build
-
-8. Copy these files into the Assets Folder:
--cp dist/index.html assets/index.html
--cp -r dist/assets assets/assets
-
-9. Package the app:
--zcli apps:package
-
+14. Package the app:
+```
+zcli apps:package
+```
 ## NOTE:
 Thank you for taking the time to look through my code! I appreciate the time and effort your team has gone through to get to learn more about me. I hope to hear back from you guys soon, and I wish you all the best. 
